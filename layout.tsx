@@ -1,23 +1,23 @@
-dsrt-photo-editor/
+DSRT-TES/
 ├── app/
-│   ├── layout.tsx
-│   ├── page.tsx
+│   ├── layout.tsx              ← Root layout (WAJIB)
+│   ├── page.tsx                ← Homepage (WAJIB)
 │   └── editor/
-│       └── page.tsx
+│       └── page.tsx            ← Halaman editor (OPSIONAL)
 │
 ├── public/
-│   ├── service-worker.js
-│   └── icons/
-│       ├── icon-192x192.png
-│       └── icon-512x512.png
+│   ├── icons/
+│   │   ├── icon-192x192.png    ← Ikon PWA (WAJIB)
+│   │   └── icon-512x512.png
+│   └── service-worker.js       ← PWA offline (WAJIB)
 │
 ├── styles/
-│   └── globals.css
+│   └── globals.css             ← Import Tailwind (WAJIB)
 │
-├── manifest.json
-├── package.json
-├── tsconfig.json
-├── tailwind.config.js
-├── postcss.config.js
-├── .gitignore
-├── README.md
+├── .gitignore                  ← Wajib abaikan node_modules
+├── manifest.json               ← Konfigurasi PWA (WAJIB)
+├── package.json                ← Konfigurasi proyek & dependensi
+├── tailwind.config.js          ← Tailwind config
+├── postcss.config.js           ← PostCSS untuk Tailwind
+├── tsconfig.json               ← TypeScript config
+├── README.md                   ← (Opsional)
