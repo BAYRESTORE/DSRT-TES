@@ -20,3 +20,9 @@
     "typescript": "^5.0.4"
   }
 }
+{
+  "scripts": {
+    "build": "next build",
+    "vercel-build": "npm install --legacy-peer-deps && next build"
+  }
+}
